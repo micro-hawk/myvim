@@ -5,7 +5,7 @@ Check it below :
 Vim is a clone, with additions, of Bill Joy's vi text editor program for Unix. Vim's author, Bram Moolenaar, based it on the source code for a port of the Stevie editor to the Amiga and released a version to the public in 1991. Vim is designed for use both from a command-line interface and as a standalone application in a graphical user interface.
 
 # VIM-PLUG
-# PROS.
+ ### PROS.
 
   *  Easier to setup: Single file. No boilerplate code required.
   *  Easier to use: Concise, intuitive syntax
@@ -30,5 +30,6 @@ You can automate the process by putting the command in your Vim configuration fi
 
 #### NOTE: This command is only for LINUX users.
 
-@microhawk
+# Thanks
+   ###### $->MICROHAWK
         
