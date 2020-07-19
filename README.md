@@ -1,4 +1,4 @@
-# .vimrc by MICROHAWK
+# MicroHawk .vimrc
 Do you know what is VIM ?
 Check it below :
 # VIM
