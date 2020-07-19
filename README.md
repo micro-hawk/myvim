@@ -25,8 +25,8 @@ Vim is a clone, with additions, of Bill Joy's vi text editor program for Unix. V
     
 You can automate the process by putting the command in your Vim configuration file as suggested.
 
-### For Direct install on your Linux Dir. Use below Command :)
-            git clone https://github.com/micro-hawk/myvim/blob/master/myvim/.vimrc.git ~/.vimrc
+### Git Clone this and then move .vimrc to your ~/ folder.  
+        mv path-of-vimrc ~/.vimrc
 
 #### NOTE: This command is only for LINUX users.
 
