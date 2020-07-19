@@ -20,6 +20,7 @@ Vim is a clone, with additions, of Bill Joy's vi text editor program for Unix. V
 
 ## Installation
 ### VIM
+  ##### Official work for vim-plug done by JUNEGUNN :)
  ##### Unix
     curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
