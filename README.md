@@ -32,6 +32,9 @@ You can automate the process by putting the command in your Vim configuration fi
 
 #### NOTE: This command is only for LINUX users.
 
+# Sample
+![Screenshot VIM](vim_img.png)
+
 # Thanks
    ###### $->MICROHAWK
         
