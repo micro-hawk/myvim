@@ -1,3 +1,12 @@
+"ooo        ooooo  o8o                               ooooo   ooooo                            oooo        
+"`88.       .888'  `"'                               `888'   `888'                            `888        
+" 888b     d'888  oooo   .ooooo.  oooo d8b  .ooooo.   888     888   .oooo.   oooo oooo    ooo  888  oooo  
+" 8 Y88. .P  888  `888  d88' `"Y8 `888""8P d88' `88b  888ooooo888  `P  )88b   `88. `88.  .8'   888 .8P'   
+" 8  `888'   888   888  888        888     888   888  888     888   .oP"888    `88..]88..8'    888888.    
+" 8    Y     888   888  888   .o8  888     888   888  888     888  d8(  888     `888'`888'     888 `88b.  
+"o8o        o888o o888o `Y8bod8P' d888b    `Y8bod8P' o888o   o888o `Y888""8o     `8'  `8'     o888o o888o 
+                                                                                                         
+
 
 call plug#begin('~/.vim/plugged')
 
