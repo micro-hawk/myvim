@@ -9,6 +9,8 @@
 
 
 call plug#begin('~/.vim/plugged')
+packadd! dracula
+
 
 Plug 'https://github.com/rafi/awesome-vim-colorschemes.git'
 Plug 'junegunn/vim-easy-align'
@@ -23,8 +25,11 @@ Plug 'preservim/nerdtree'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 
+" theme Github
+Plug 'wojciechkepka/vim-github-dark'
 
-
+" Oceanic Theme
+Plug 'mhartington/oceanic-next'
 call plug#end()
 
 
@@ -110,6 +115,15 @@ nnoremap <leader>s :mksession<CR>
 " open ag.vim
 nnoremap <leader>a :Ag
 
+" for vim 7
+ set t_Co=256
+
+" for vim 8
+ if (has("termguicolors"))
+  set termguicolors
+ endif
+
+
 
 
 """"""""""""""""""""""""""""""""""""""""""""""
@@ -118,6 +132,9 @@ nnoremap <leader>a :Ag
 """"""""""""""""""""""""""""""""""""""""""""""
 
 
+"colorscheme ghdark 
+"
+colorscheme OceanicNext
 "colorscheme 256_noir
 "colorscheme abstract
 "colorscheme afterglow
@@ -127,12 +144,12 @@ nnoremap <leader>a :Ag
 "colorscheme flattened_dark
 "colorscheme flattened_light
 "colorscheme github
-"colorscheme gruvbox
+" colorscheme gruvbox
 "colorscheme happy_hacking
 "colorscheme hybrid
 "colorscheme onedark
 "colorscheme lucid
-colorscheme materialbox
+"colorscheme materialbox
 "colorscheme meta5
 "colorscheme minimalist
 "colorscheme molokai
@@ -144,5 +161,41 @@ colorscheme materialbox
 
 
 
-set background=dark
+"set background=dark
 
+
+
+" for transparent background
+function! AdaptColorscheme()
+   highlight clear CursorLine
+   highlight Normal ctermbg=none
+   highlight LineNr ctermbg=none
+   highlight Folded ctermbg=none
+   highlight NonText ctermbg=none
+   highlight SpecialKey ctermbg=none
+   highlight VertSplit ctermbg=none
+   highlight SignColumn ctermbg=none
+endfunction
+autocmd ColorScheme * call AdaptColorscheme()
+
+highlight Normal guibg=NONE ctermbg=NONE
+highlight CursorColumn cterm=NONE ctermbg=NONE ctermfg=NONE
+highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE
+highlight CursorLineNr cterm=NONE ctermbg=NONE ctermfg=NONE
+highlight clear LineNr
+highlight clear SignColumn
+highlight clear StatusLine
+
+
+" Change Color when entering Insert Mode
+autocmd InsertEnter * set nocursorline
+
+" Revert Color to default when leaving Insert Mode
+autocmd InsertLeave * set nocursorline
+
+"" extra settings, uncomment them if necessary :)
+"set cursorline
+"set noshowmode
+"set nocursorline
+
+" trasparent end
